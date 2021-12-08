@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>서울시 자치구별 코로나 확진 수 예측</title>
+</head>
+<body>
+    <div class="my-box">
+        <center>
+            <form action = "http://127.0.0.1:5000/result/" method = "POST">
+                <p>
+                    서울시 자치구 : <input type="text" name="name"><br>
+                    서울시 자치구를 입력하고 검색버튼을 누르세요.  <input type="Submit" value="검색"/>
+                </p>
+        </center>
+    </div>
+    <style>
+    .aa {margin : 5px; float : center;}
+    .my-box { border:1px solid; padding:20px;  grid-template-columns: 1fr 3fr 1fr; }
+    </style>
+    <div class = "aa" align="center">
+
+            <img src = "static/images/seoul_logo.jpg" width=300 height= 350>
+            <img src = "static/images/seoul_map.gif">
+            <img src = "static/images/covid.png" width = 300 height=350>
+    </div>
+
+    <div class = "my-box" align = "center">
+        <p>
+        예측 코로나 확진자 수를 보고싶은 자치구를 검색해주세요<br>
+        해당 자치구의 확진자 그래프와 이후 7일동안의 예측 확진자 수, 서울시 전체 코로나 확진자 수가 나타납니다.
+        </p>
+    </div>
+</body>
+</html>
+
