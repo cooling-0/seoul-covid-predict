@@ -1,0 +1,41 @@
+<!doctype html>
+        <html>
+
+           <body>
+           <style>
+                .aa {margin : 5px; float : center;}
+                .my-box { border:1px solid; padding:20px;  grid-template-columns: 1fr 3fr 1fr; }
+           </style>
+           <center>
+               <h1>
+                   <span style="border-radius: 15px 15px 15px 0; border: 3px solid #FFAD5B; padding: 0.5em 0.6em; color: #FF8000;">
+                       {{index}}
+                   </span>
+               </h1>
+               <div id = "btn_group">
+                       <center><button onClick="history.back();">메인화면으로 이동하기</button ></center>
+               </div>
+               <div class="my-box" align="center">
+                    <p>
+                        해당 자치구의 최근 한달동안의 실제 확진자 추세 그래프는 제일 왼쪽 그래프와 같습니다.<br>
+                        해당 자치구의 오늘 이후 7일동안의 예측 확진자 수는 오른쪽 그래프와 같습니다.<br>
+                        가운데의 그래프: 예측 확진자와 실제 확진자의 그래프 비교를 참고용으로 보여드립니다.(파란선 : 예측, 주황선 : 실제)
+
+                    </p>
+               </div>
+           </center>
+           <div class = "aa" align="center">
+
+                <img src = "http://127.0.0.1:5000/static/images/real.png" width=350 height= 300>
+                <img src = "http://127.0.0.1:5000/static/images/b.png" width = 350 height = 300>
+                <img src = "http://127.0.0.1:5000/static/images/predict.png" width = 350 height=300>
+           </div>
+           <div class = "my-box" align = "center">
+                <p>
+                해당 예측 확진자 수는 실제 확진자 수와 평균 적으로 4명 정도 차이를 보이고 있습니다.<br>
+                다른 서울시 자치구의 확진자수를 확인 하고 싶으시면 상단의 "메인화면으로 돌아가기로" 버튼을 이용해 주시기 바랍니다.
+                </p>
+           </div>
+           </body>
+        </html>
+
